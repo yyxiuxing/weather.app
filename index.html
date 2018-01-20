@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scable=0,maximum-scable=1,minimum-scable=1">
+	<title>天气app</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/clear.css">
+	<script src="js/jquery3.2.1.min.js"></script>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+<body>
+	<!-- 当下的天气情况 -->
+	<header>
+		<h1 class="now_city_box">
+			<span class="dingwei">&#xe60d;</span>
+			<span class="now_city"></span>
+		</h1>
+		<div class="now_air_box">
+			<span class="now_air_title">空气</span>
+			<span class="now_air_quality"></span>
+		</div>
+		<h2 class="now_temp">
+			<span class="now_temp_temp"></span><span>°</span>
+		</h2>
+		<h3 class="now_weather"></h3>
+		<h4 class="now_wind_box">
+			<span class="wind"></span>
+			<span class="jiji"></span>
+		</h4>
+		<h5 class="tishi">有微风，注意保暖！</h5>
+	</header>
+	<!-- 近两天的天气情况 -->
+	<section class="next">
+		<div class="next_box next_box1">
+			<div class="next_top">
+				<span class="next_date">今天</span>
+				<p class="next_temp">
+					<span class="today_temp_max"></span>/<span class="tody_temp_min"></span>℃
+				</p>
+			</div>
+			<div class="next_bottom">
+				<span class="today_weather"></span>
+				<img src="" alt="" class="tody_img">
+			</div>
+		</div>
+		<div class="next_box">
+			<div class="next_top">
+				<span class="next_date">明天</span>
+				<p class="next_temp">
+					<span class="tomorrow_temp_max"></span>/<span class="tomorrow_temp_min"></span>℃
+				</p>
+			</div>
+			<div class="next_bottom">
+				<span class="tomorrow_weather"></span>
+				<img src="" alt="" class="tomorrow_img">
+			</div>
+		</div>
+	</section>
+	<!-- 未来24小时 -->
+	<section class="hours">
+		<ul class="hours_content">
+			<!--<li>
+				<span class="hours_time">12:00</span>
+				<img src="img/15.png" alt="" class="hours_img">
+				<span class="hours_temp">-1</span>
+			</li>-->
+		</ul>
+	</section>
+	<!-- 未来一周的天气情况 -->
+	<section class="weeks">
+		<ul class="weeks_content">
+			<!--<li>
+				<span class="weeks_time">01/15</span>
+				<span class="weeks_weather">多云</span>
+				<img src="img/1.png" alt="" class="weeks_img">
+				<span class="weeks_temp_max">3℃</span>
+				<span class="weeks_temp_min">-12℃</span>
+				<span class="weeks_wind">西北风</span>
+				<span class="weeks_windji">3级</span>
+			 </li>-->
+			 
+		</ul>
+	</section>
+	<!-- 城市地区 -->
+	<section class="citys">
+		<div class="search_box">
+			<input type="text" class="search" placeholder="请输入搜索内容">
+			<span class="confirm">取消</span>
+		</div>
+		<div class="citys_box">
+			<section>
+				<h1 class="citys_title1">热门城市</h1>
+				<ul class="citys_list">
+					<li>北京</li>
+					<li>上海</li>
+					<li>广州</li>
+					<li>深圳</li>
+					<li>太原</li>
+					<li>运城</li>
+				</ul>
+			</section>
+			<!--<section>
+				<h1 class="citys_title">热门城市</h1>
+				<ul class="city_list">
+					<li>北京</li>
+					<li>上海</li>
+					<li>广州</li>
+					<li>深圳</li>
+					<li>太原</li>
+					<li>运城</li>
+				</ul>
+			</section>-->
+		</div>
+	</section>
+</body>
+</html>
